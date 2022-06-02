@@ -10,9 +10,9 @@ app.use(cors());
 app.use("/books", router); // localhost:5000/books
 
 //route
-app.get('/', (req, res) => {
-  res.send('WORKING')
-})
+// app.get('/', (req, res) => {
+//   res.send('WORKING')
+// })
 
 mongoose
   .connect(process.env.MONGO_URI)
