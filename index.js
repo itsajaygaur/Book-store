@@ -5,16 +5,16 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT
 // require('dotenv').config()
-const url = "mongodb+srv://666:1234@cluster0.xgs1j.mongodb.net/bookstore?retryWrites=true&w=majority"
+const url = process.env.MONGO_URI
 // Middlewares
 app.use(express.json());
 app.use(cors());
 app.use("/books", router); // localhost:5000/books
 
 //route
-// app.get('/', (req, res) => {
-//   res.send('WORKING')
-// })
+app.get('/', (req, res) => {
+  res.send('WORKING')
+})
 
 mongoose
   .connect(url)
