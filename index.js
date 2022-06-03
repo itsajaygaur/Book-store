@@ -4,7 +4,7 @@ const router = require("./routes/book-routes");
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT
-// require('dotenv').config()
+require('dotenv').config()
 const url = process.env.MONGO_URI
 // Middlewares
 app.use(express.json());
