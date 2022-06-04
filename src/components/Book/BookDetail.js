@@ -60,6 +60,7 @@ const BookDetail = () => {
             alignContent={"center"}
             alignSelf="center"
             margin={"20px auto"}
+            padding="0 40px"
           >
             <FormLabel>Name</FormLabel>
             <TextField
